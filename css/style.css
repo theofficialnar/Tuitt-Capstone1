@@ -1,0 +1,230 @@
+/*GENERAL RULES*/
+main {
+	background-color: #9D2053;
+}
+
+.vh50 {
+	height: 50vh;
+	width: 100%;
+
+}
+
+.bg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	background-attachment: fixed;
+}
+
+@media screen and (max-width: 479px) {
+
+  	.navbar-header {
+		background-color: #9D2053;
+	}
+
+	.navbar-nav {
+		background-color: #9D2053;
+		margin: 0px;
+	}
+
+	.navbar-collapse {
+		padding: 0px;
+		border-radius: 0 0 5px 5px;
+	}
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border: 0px;
+	}
+	
+	.navbar-default > .container > .navbar-collapse > .navbar-nav > li > a {
+	color: #f6d5e2;
+	font-weight: bolder;
+	}
+
+	.navbar-default > .container > .navbar-collapse > .navbar-nav > li > a:focus,
+	.navbar-default > .container > .navbar-collapse > .navbar-nav > li > a:hover {
+	color: #2a0916;
+	}
+
+	.jumbotronsmall {
+	margin-bottom: 15px;
+	}
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+ 	header > .container > h1 {
+    font-size: 5em;
+  	}
+  	
+  	.navbar-header {
+		background-color: #9D2053;
+	}
+
+	.navbar-nav {
+		background-color: #9D2053;
+		margin: 0px;
+	}
+
+	.navbar-collapse {
+		padding: 0px;
+		border-radius: 0 0 5px 5px;
+	}
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border: 0px;
+	}
+
+	.navbar-default > .container > .navbar-collapse > .navbar-nav > li > a {
+	color: #f6d5e2;
+	font-weight: bolder;
+	}
+
+	.navbar-default > .container > .navbar-collapse > .navbar-nav > li > a:focus,
+	.navbar-default > .container > .navbar-collapse > .navbar-nav > li > a:hover {
+	color: #2a0916;
+	}
+
+	.jumbotronsmall {
+	margin-bottom: 15px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  	header > .container > h1 {
+    font-size: 6em;
+  	}
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+ 	header > .container > h1 {
+    	font-size: 7em;
+  	}
+
+  	.tour-margin > .jumbotron{
+	margin-bottom: 0px;
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+  	header > .container > h1 {
+    	font-size: 8em;
+  	}
+
+  	.jumbotronsmall {
+	margin-bottom: 0px;
+	}
+
+}
+
+/*/GENERAL RULES*/
+
+/*BANNER*/
+header {
+	background-image: url(../images/banner.jpeg);
+	width: 100%;
+	height: 100vh;
+	padding: 0px;
+}
+
+header > .container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+header > .container > h1 {
+	font-family: 'Monoton', cursive;
+	color: #d8417d;
+	text-shadow: 0 0 25px black;
+}
+
+/*/BANNER*/
+
+/*NAVBAR*/
+header > .navbar-default {
+	background-color: rgba(0, 0, 0, 0);
+	text-align: center;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand {
+	color: #d8417d;
+	font-weight: bolder;
+}
+
+.navbar {
+	border: 0px;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+	color: #f2c0d4;
+}
+
+/*/NAVBAR*/
+
+/*TOUR*/
+.carousel-image1 {
+	background: url(../images/ss1.jpeg);
+	background-size: cover;
+	background-position: center;
+	min-height: 60vh;
+	width: 100%;
+}
+
+.carousel-image2 {
+	background: url(../images/ss2.jpeg);
+	background-size: cover;
+	background-position: center;
+	min-height: 60vh;
+	width: 100%;
+}
+
+.carousel-image3 {
+	background: url(../images/ss3.jpeg);
+	background-size: cover;
+	background-position: center;
+	min-height: 60vh;
+	width: 100%;
+}
+
+.carousel-image4 {
+	background: url(../images/ss4.jpeg);
+	background-size: cover;
+	background-position: center;
+	min-height: 60vh;
+	width: 100%;
+}
+
+.row-no-padding > [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tour-margin {
+	margin: 0 25% 0;
+}
+
+/*MERCH*/
+main .merch {
+	background-image: url(../images/merch.jpeg);
+}
+/*/MERCH*/
+
+/*NEW ALBUM*/
+main .new-album {
+	background-image: url(../images/new-album.jpg);
+}
+
+footer {
+	width: 100%;
+	height: 20vh;
+}
+
