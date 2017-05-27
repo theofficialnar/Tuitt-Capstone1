@@ -1,12 +1,14 @@
 /*GENERAL RULES*/
+
 main {
 	background-color: #9D2053;
+	color: white;
 }
 
-.vh50 {
-	height: 50vh;
+.vh70 {
+	min-height: 70vh;
 	width: 100%;
-
+	text-align: center;
 }
 
 .bg {
@@ -47,10 +49,6 @@ main {
 	color: #2a0916;
 	}
 
-	.jumbotronsmall {
-	margin-bottom: 15px;
-	}
-
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -86,9 +84,6 @@ main {
 	color: #2a0916;
 	}
 
-	.jumbotronsmall {
-	margin-bottom: 15px;
-	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -103,10 +98,6 @@ main {
     	font-size: 7em;
   	}
 
-  	.tour-margin > .jumbotron{
-	margin-bottom: 0px;
-	}
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -114,16 +105,12 @@ main {
     	font-size: 8em;
   	}
 
-  	.jumbotronsmall {
-	margin-bottom: 0px;
-	}
-
 }
 
 /*/GENERAL RULES*/
 
 /*BANNER*/
-header {
+.bg-main {
 	background-image: url(../images/banner.jpeg);
 	width: 100%;
 	height: 100vh;
@@ -137,7 +124,7 @@ header > .container {
 	transform: translate(-50%, -50%);
 }
 
-header > .container > h1 {
+.bg-main > .container > h1 {
 	font-family: 'Monoton', cursive;
 	color: #d8417d;
 	text-shadow: 0 0 25px black;
@@ -171,60 +158,109 @@ header > .navbar-default {
 /*/NAVBAR*/
 
 /*TOUR*/
-.carousel-image1 {
-	background: url(../images/ss1.jpeg);
-	background-size: cover;
-	background-position: center;
-	min-height: 60vh;
-	width: 100%;
+.tour .jumbotron {
+	margin: 0 auto 30px;
+	color: #333
 }
 
-.carousel-image2 {
-	background: url(../images/ss2.jpeg);
-	background-size: cover;
-	background-position: center;
-	min-height: 60vh;
-	width: 100%;
-}
-
-.carousel-image3 {
-	background: url(../images/ss3.jpeg);
-	background-size: cover;
-	background-position: center;
-	min-height: 60vh;
-	width: 100%;
-}
-
-.carousel-image4 {
-	background: url(../images/ss4.jpeg);
-	background-size: cover;
-	background-position: center;
-	min-height: 60vh;
-	width: 100%;
-}
-
-.row-no-padding > [class*="col-"] {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.tour-margin {
-	margin: 0 25% 0;
+.tour {
+	padding: 0px 15% 0px;
 }
 
 /*MERCH*/
 main .merch {
-	background-image: url(../images/merch.jpeg);
+	background: linear-gradient(rgba(157, 32, 83, 0.1), rgba(157, 32, 83, 0.1)), url(../images/merch.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	background-attachment: fixed;
+	position: relative;
 }
+
+.merch-caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 /*/MERCH*/
 
 /*NEW ALBUM*/
 main .new-album {
 	background-image: url(../images/new-album.jpg);
+	color: #d8417d;
 }
 
+.new-album img {
+	padding: 20px 0 30px;
+	margin: 0 auto;
+}
+
+
+/*/NEW ALBUM*/
+
+/*FOOTER*/
 footer {
 	width: 100%;
-	height: 20vh;
+	min-height: 20vh;
+	text-align: center;
+	padding: 30px 0 30px;
+
 }
 
+footer .input-group {
+	width: 40%;
+	margin: 0 auto;
+}
+
+footer .input-group span {
+	color: #333
+}
+
+footer ul {
+	list-style: none;
+	padding: 0px;
+
+}
+
+footer li {
+	display: inline-block;
+	padding: 0 10px 0;
+
+}
+
+footer img {
+	width: 40px;
+}
+
+/*/FOOTER*/
+
+/*MERCHANDISE SECTION*/
+.bg-merch {
+	background-image: url(../images/shirt.jpeg);
+	width: 100%;
+	height: 100vh;
+	padding: 0px;
+}
+
+.merch-body {
+	width: 100%;
+}
+
+.merch-body .merch-filter, .merch-display {
+	padding: 20px;
+}
+
+.merch-body h3 {
+	float: right;
+}
+
+.thumb {
+	margin-bottom: 30px;
+}
+
+.merch-filter {
+	height: 100%;
+}

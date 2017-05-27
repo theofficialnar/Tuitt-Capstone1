@@ -21,10 +21,10 @@
     <![endif]-->
   </head>
   <body>
-  	<header class="bg">
+  	<header class="bg bg-main">
   		<!-- NAV -->
   		<nav class="navbar navbar-default">
-  			<div class="container">
+  			<div class="container-fluid">
   				<div class="navbar-header">
 	  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 				            <span class="icon-bar"></span>
@@ -36,7 +36,7 @@
 		        <div class="collapse navbar-collapse" id="myNavbar">
 	            	<ul class="nav navbar-nav navbar-right">
 	            		<li><a href="#">Home</a></li>
-	            		<li><a href="#">Merch</a></li>
+	            		<li><a href="merchandise.html">Merch</a></li>
 	            		<li><a href="#">Tour</a></li>
 	            		<li><a href="#">Discography</a></li>
 	            	</ul>
@@ -44,6 +44,7 @@
 	        </div>
   		</nav>
   		<!-- /NAV -->
+
   		<!-- BANNER BRAND -->
   		<div class="container">
   			<h1 class="text-center">PINK <br> SADISTIC UNICORNS</h1>
@@ -53,61 +54,70 @@
 
   	<main>
   		<!-- TOUR -->
-	  	<div class="container-fluid">
-	  		<div class="row row-no-padding">
-		  		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-		  			<div class="tour-margin">
-			  			<div class="page-header">
-			  				<h1 class="text-center ">See us Live!</h1>
-			  			</div>
-			  			<div class="jumbotron jumbotronsmall" style="text-align: center">
-			  				<h2>New York</h2>
-			  				<p>Times Square</p>
-			  				<p>June 3, 2017</p>
-			  				<p>8:00 PM</p>
-			  				<button class="btn btn-danger">Book Now</button>
-			  			</div>
-			  		</div>
-		  		</div>
-		  		<!-- CAROUSEL -->
-		  		<div id="myCarousel" class="carousel slide col-xs-12 col-sm-12 col-md-6 col-lg-6" data-ride="carousel">
-				  <div class="carousel-inner">
-				    <div class="item active">
-				      <div class="carousel-image1"></div>
-				    </div>
-
-				    <div class="item">
-				      <div class="carousel-image2"></div>
-				    </div>
-
-				    <div class="item">
-				      <div class="carousel-image3"></div>
-				    </div>
-
-				    <div class="item">
-				      <div class="carousel-image4"></div>
-				    </div>
-				  </div>
-				</div>
-				<!-- /CAROUSEL -->
-
+	  	<div class="container tour">
+	  		<div class="row">
+	  			<div class="page-header">
+	  				<h1 class="text-center ">See us Live!</h1>
+	  			</div>
+	  			<div class="jumbotron" style="text-align: center">
+	  				<h1>New York</h1>
+	  				<p>Times Square</p>
+	  				<p>June 3, 2017</p>
+	  				<p>8:00 PM</p>
+	  				<button class="btn btn-danger">Book Now</button>
+	  			</div>	  			
 			</div>
-
-	  	</div>
+		</div>
 	  	<!-- /TOUR -->
+
 	  	<!-- MERCH -->
-	  	<div class="container-fluid vh50 merch bg">
-	  		<h1 class="text-center">MERCH GOES HERE</h1>
+	  	<div class="container-fluid merch vh70">
+	  		<div class="row">
+		  		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 merch-caption">
+		  			<h1>Dress like you're taking over the world!</h1>
+		  			<h1>Official Merch out now!</h1>
+		  			<button class="btn btn-danger text-center"> Drop by our Shop </button>
+		  		</div>
+		  	</div>
 	  	</div>
 	  	<!-- /MERCH -->
+
 	  	<!-- NEW ALBUM -->
-	  	<div class="container-fluid vh50 new-album bg">
-	  		<h1 class="text-center">NEW ALBUM GOES HERE</h1>
+	  	<div class="container-fluid vh70 new-album bg">
+	  		<h1> Fluffy Death Machine </h1>
+	  		<h3>is out now to cuddle with your soul</h3>
+	  		<img src="images/album1.png" alt="Fluffy Death Machine Album Cover" class="img-responsive">
 	  	</div>
 	  	<!-- /NEW ALBUM -->
+
 	  	<!-- FOOTER -->
 	  	<footer class="container-fluid">
-	  		<h1 class="text-center">FOOTER</h1>
+	  		<div class="row">
+	  			<!-- NEWSLETTER -->
+	  			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+	  				<h1>Be an edgy unicorn!</h1>
+	  				<h5>Sign up for our newsletter</h5>
+	  				<form>
+	  					<div class="input-group">
+		  					<input type="text" id="email" name="email" class="form-control" placeholder="Email">
+		  					<span class="input-group-btn">
+        						<button class="btn btn-secondary" type="button"><i class="glyphicon glyphicon-send"></i></button>
+      						</span>
+		  				</div>
+	  				</form>
+	  			</div>
+	  			<!-- SOCIALBAR -->
+	  			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 socialbar">
+	  				<h1>Follow the unicorn!</h1>
+	  				<ul>
+	  					<li><a href="#"><img src="images/facebook.svg" alt="facebook" class="img-responsive"></a></li>
+	  					<li><a href="#"><img src="images/youtube.svg" alt="youtube" class="img-responsive"></a></li>
+	  					<li><a href="#"><img src="images/soundcloud.svg" alt="soundcloud" class="img-responsive"></a></li>
+	  					<li><a href="#"><img src="images/twitter.svg" alt="twitter" class="img-responsive"></a></li>
+	  					<li><a href="#"><img src="images/youtube.svg" alt="youtube" class="img-responsive"></a></li>
+	  					<li><a href="#"><img src="images/google.svg" alt="google" class="img-responsive"></a></li>
+	  				</ul>
+	  			</div>
 	  	</footer>
 	  	<!-- /FOOTER -->
 
