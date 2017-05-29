@@ -19,14 +19,25 @@ main {
 	background-attachment: fixed;
 }
 
+.banner-caption {
+	font-family: 'Fredericka the Great', cursive;
+	color: #941e4d;
+	border-top: 5px double #941e4d;
+	border-bottom: 5px double #941e4d;
+}
+
+.bangers {
+	font-family: 'Bangers';
+}
+
 @media screen and (max-width: 479px) {
 
   	.navbar-header {
-		background-color: #9D2053;
+		background-color: rgba(0, 0, 0, 0.7);
 	}
 
 	.navbar-nav {
-		background-color: #9D2053;
+		background-color: rgba(0, 0, 0, 0.7);
 		margin: 0px;
 	}
 
@@ -49,6 +60,19 @@ main {
 	color: #2a0916;
 	}
 
+	.login-overlay .popup {
+    width: 70%;
+ 	}
+
+ 	.tour .bangers {
+  		font-size: 7em;
+  	}
+
+  	.merch-caption > h1,
+  	.new-album > h1 {
+  		font-size: 3em;
+  	}
+
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -57,11 +81,11 @@ main {
   	}
   	
   	.navbar-header {
-		background-color: #9D2053;
+		background-color: rgba(0, 0, 0, 0.7);
 	}
 
 	.navbar-nav {
-		background-color: #9D2053;
+		background-color: rgba(0, 0, 0, 0.7);
 		margin: 0px;
 	}
 
@@ -84,6 +108,19 @@ main {
 	color: #2a0916;
 	}
 
+	.login-overlay .popup {
+    width: 70%;
+ 	}
+
+ 	.tour .bangers {
+  		font-size: 8em;
+  	}
+
+  	.merch-caption > h1,
+  	.new-album > h1 {
+  		font-size: 3.5em;
+  	}
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -91,18 +128,49 @@ main {
     font-size: 6em;
   	}
 
+  	.login-overlay .popup {
+    width: 50%;
+ 	}
+
+ 	.tour .bangers {
+  		font-size: 8em;
+  	}
+
+  	.merch-caption > h1,
+  	.new-album > h1 {
+  		font-size: 3.5em;
+  	}
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
  	header > .container > h1 {
-    	font-size: 7em;
+    font-size: 7em;
+  	}
+
+  	.tour .bangers {
+  		font-size: 8em;
+  	}
+
+  	.merch-caption > h1,
+  	.new-album > h1 {
+  		font-size: 4em;
   	}
 
 }
 
 @media screen and (min-width: 1200px) {
   	header > .container > h1 {
-    	font-size: 8em;
+    font-size: 8em;
+  	}
+
+  	.tour .bangers {
+  		font-size: 8em;
+  	}
+
+  	.merch-caption > h1,
+  	.new-album > h1 {
+  		font-size: 4em;
   	}
 
 }
@@ -153,6 +221,26 @@ header > .navbar-default {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover {
 	color: #f2c0d4;
+	font-size: 2em;
+	transition: 0.5s;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #d8417d;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #d8417d;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #f6d5e2;
+}
+
+.navbar-brand {
+	font-family: 'Finger Paint', cursive;
+	font-size: 22px;
 }
 
 /*/NAVBAR*/
@@ -165,6 +253,83 @@ header > .navbar-default {
 
 .tour {
 	padding: 0px 15% 0px;
+}
+/*/TOUR*/
+
+/*LOG IN MODAL*/
+.login-overlay {
+	position: fixed;
+	top 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+	height: 100%;
+	z-index: 9999;
+}
+
+.login-overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 3px;
+	width: 30%;
+	position: relative;
+	transition: all 5s ease-in-out;
+}
+
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #d8417d;
+}
+
+.popup .close:hover {
+	content: #d8417d;
+}
+
+.popup .content {
+	max-height: 30%;
+	overflow: auto;
+}
+
+.popup h2 {
+	margin-top: 0;
+  	color: #333;
+}
+
+.popup form {
+	padding-bottom: 5px;
+}
+
+.btn-custom {
+  color: #fff;
+  background-color: #be2764;
+  border-color: #9D2053;
+}
+.btn-custom:focus,
+.btn-custom.focus {
+  color: #fff;
+  background-color: #9D2053;
+  border-color: #be2764;
+}
+.btn-custom:hover {
+  color: #fff;
+  background-color: #9D2053;
+  border-color: #3f0d21;
 }
 
 /*MERCH*/
@@ -185,11 +350,22 @@ main .merch {
 	transform: translate(-50%, -50%);
 }
 
+.merch-body h3 a {
+	text-decoration: none;
+	color: white;
+}
+
+.merch-body h3 a:hover,
+.merch-body h3 a:focus {
+	text-decoration: none;
+	color: #f2c0d4;
+}
+
 /*/MERCH*/
 
 /*NEW ALBUM*/
 main .new-album {
-	background-image: url(../images/new-album.jpg);
+	background-image: linear-gradient(rgba(157, 32, 83, 0.1), rgba(157, 32, 83, 0.1)), url(../images/new-album.jpg);
 	color: #d8417d;
 }
 
@@ -235,11 +411,15 @@ footer img {
 	width: 40px;
 }
 
+footer img:hover {
+	opacity: 0.7;
+}
+
 /*/FOOTER*/
 
 /*MERCHANDISE SECTION*/
 .bg-merch {
-	background-image: url(../images/shirt.jpeg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/shirt.jpeg);
 	width: 100%;
 	height: 100vh;
 	padding: 0px;
@@ -263,4 +443,52 @@ footer img {
 
 .merch-filter {
 	height: 100%;
+}
+/*/MERCH SECION*/
+
+/*TOUR SECTION*/
+.bg-tour {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/tour.jpg);
+	width: 100%;
+	height: 100vh;
+	padding: 0px;
+}
+
+.tour-container {
+	padding: 30px 15px 15px;
+}
+
+.tour-container .location {
+	font-weight: bolder;
+	font-size: 23px;
+}
+
+.tour-container .tour-row {
+	padding: 10px 0 10px;
+}
+
+.tour-container .tour-row:hover {
+	background-color: #7f1a42;
+}
+
+.tour-container hr {
+	margin: 0;
+}
+
+.tour-container button {
+	margin: 5px 0 5px;
+}
+/*/TOUR SECTION*/
+
+/*DISCOGRAPHY*/
+.bg-discography {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/discography.jpeg);
+	width: 100%;
+	height: 100vh;
+	padding: 0px;
+}
+
+.album-container .thumb {
+	margin-top: 30px;
+	margin-bottom: 0px;
 }

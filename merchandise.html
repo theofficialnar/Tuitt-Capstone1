@@ -4,11 +4,11 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Pink Sadistic Unicorns Merchandise</title>
+	<title>Pink Sadistic Unicorns | Merchandise</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+   	<link href="https://fonts.googleapis.com/css?family=Monoton|Finger+Paint|Fredericka+the+Great|Bangers" rel="stylesheet">
 </head>
 <body>
 	<!-- NAV -->
@@ -21,23 +21,47 @@
 				            <span class="icon-bar"></span>
 				            <span class="icon-bar"></span>
 				    </button>
-				    <a class="navbar-brand" href="#">Pink Sadistic Unicorns</a>
+				    <a class="navbar-brand" href="index.html">Pink Sadistic Unicorns</a>
     			</div>
 		        <div class="collapse navbar-collapse" id="myNavbar">
 	            	<ul class="nav navbar-nav navbar-right">
 	            		<li><a href="index.html">Home</a></li>
 	            		<li><a href="merchandise.html">Merch</a></li>
-	            		<li><a href="#">Tour</a></li>
-	            		<li><a href="#">Discography</a></li>
+	            		<li><a href="tour.html">Tour</a></li>
+	            		<li><a href="discography.html">Discography</a></li>
+	            		<li><a href="#login">Log In</a></li>
 	            	</ul>
 	            </div>
 	        </div>
   		</nav>
   		<!-- /NAV -->
 
+  		<!-- LOG IN MODAL -->
+  		<div id="login" class="login-overlay">
+  			<div class="popup">
+  				<h2>Log in</h2>
+  				<a class="close" href="#">&times;</a>
+				<div class="content">
+					<form>
+	  					<div class="input-group">
+	  						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+	  						<input id="email" type="text" class="form-control" name="email" placeholder="Email">
+	  					</div>
+	  					<div class="input-group">
+	  						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+	  						<input id="password" type="password" class="form-control" name="password" placeholder="Password">
+	  					</div>
+					</form>
+					<button class="btn btn-custom col-xs-12">Log In</button>
+					<a href="#" class="register">Need an account? Sign up here.</a>
+				</div>
+  			</div>
+  		</div>
+  		<!-- /LOG IN MODAL -->
+
   		<!-- BANNER CAPTION -->
   		<div class="container">
-  			<h1 class="text-center">MERCHANDISE</h1>
+  			<h1 class="text-center banner-caption">MERCHANDISE</h1>
   		</div>
   		<!-- /BANNER CAPTION -->
   	</header>
@@ -119,6 +143,7 @@
 					</div>
   				</div> <!-- /MERCH FILTER -->
 
+  				<!-- DISPLAY ITEMS -->
   				<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 merch-display">
   					<div class="row">
   						<div class="col-lg-3 col-md-4 col-xs-6 thumb">
@@ -162,7 +187,7 @@
 	  						</a>
   						</div>
   					</div>
-  				</div>
+  				</div> <!-- /DISPLAY ITEMS -->
 	  		</div> <!-- /MAIN SECTION -->
   		</div>
   		<!-- FOOTER -->
@@ -171,7 +196,7 @@
 	  		<div class="row">
 	  			<!-- NEWSLETTER -->
 	  			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-	  				<h1>Be an edgy unicorn!</h1>
+	  				<h1 class="bangers">Be an edgy unicorn!</h1>
 	  				<h5>Sign up for our newsletter</h5>
 	  				<form>
 	  					<div class="input-group">
@@ -184,14 +209,14 @@
 	  			</div>
 	  			<!-- SOCIALBAR -->
 	  			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 socialbar">
-	  				<h1>Follow the unicorn!</h1>
+	  				<h1 class="bangers">Follow the unicorn!</h1>
 	  				<ul>
-	  					<li><a href="#"><img src="images/facebook.svg" alt="facebook" class="img-responsive"></a></li>
-	  					<li><a href="#"><img src="images/youtube.svg" alt="youtube" class="img-responsive"></a></li>
-	  					<li><a href="#"><img src="images/soundcloud.svg" alt="soundcloud" class="img-responsive"></a></li>
-	  					<li><a href="#"><img src="images/twitter.svg" alt="twitter" class="img-responsive"></a></li>
-	  					<li><a href="#"><img src="images/youtube.svg" alt="youtube" class="img-responsive"></a></li>
-	  					<li><a href="#"><img src="images/google.svg" alt="google" class="img-responsive"></a></li>
+	  					<li><a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook" class="img-responsive"></a></li>
+	  					<li><a href="https://youtube.com" target="_blank"><img src="images/youtube.svg" alt="youtube" class="img-responsive"></a></li>
+	  					<li><a href="https://soundcloud.com" target="_blank"><img src="images/soundcloud.svg" alt="soundcloud" class="img-responsive"></a></li>
+	  					<li><a href="https://twitter.com" target="_blank"><img src="images/twitter.svg" alt="twitter" class="img-responsive"></a></li>
+	  					<li><a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="instagram" class="img-responsive"></a></li>
+	  					<li><a href="https://plus.google.com" target="_blank"><img src="images/google.svg" alt="google" class="img-responsive"></a></li>
 	  				</ul>
 	  			</div>
 	  	</footer> <!-- /FOOTER -->
