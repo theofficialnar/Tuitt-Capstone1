@@ -1,5 +1,4 @@
 /*GENERAL RULES*/
-
 main {
 	background-color: #9D2053;
 	color: white;
@@ -33,11 +32,11 @@ main {
 @media screen and (max-width: 479px) {
 
   	.navbar-header {
-		background-color: rgba(0, 0, 0, 0.7);
+		background-color: rgba(0, 0, 0, 0.9);
 	}
 
 	.navbar-nav {
-		background-color: rgba(0, 0, 0, 0.7);
+		background-color: rgba(0, 0, 0, 0.9);
 		margin: 0px;
 	}
 
@@ -73,6 +72,10 @@ main {
   		font-size: 3em;
   	}
 
+  	.navbar-brand {
+	font-size: 14px;
+	}
+
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -81,11 +84,11 @@ main {
   	}
   	
   	.navbar-header {
-		background-color: rgba(0, 0, 0, 0.7);
+		background-color: rgba(0, 0, 0, 0.9);
 	}
 
 	.navbar-nav {
-		background-color: rgba(0, 0, 0, 0.7);
+		background-color: rgba(0, 0, 0, 0.9);
 		margin: 0px;
 	}
 
@@ -121,6 +124,10 @@ main {
   		font-size: 3.5em;
   	}
 
+  	.navbar-brand {
+	font-size: 16px;
+	}
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -141,6 +148,11 @@ main {
   		font-size: 3.5em;
   	}
 
+  	.navbar-brand {
+	font-size: 22px;
+	}
+
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -157,6 +169,10 @@ main {
   		font-size: 4em;
   	}
 
+  	.navbar-brand {
+	font-size: 22px;
+	}
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -172,6 +188,10 @@ main {
   	.new-album > h1 {
   		font-size: 4em;
   	}
+
+  	.navbar-brand {
+	font-size: 22px;
+	}
 
 }
 
@@ -194,10 +214,8 @@ header > .container {
 
 .bg-main > .container > h1 {
 	font-family: 'Monoton', cursive;
-	color: #d8417d;
 	text-shadow: 0 0 25px black;
 }
-
 /*/BANNER*/
 
 /*NAVBAR*/
@@ -214,6 +232,7 @@ header > .navbar-default {
 
 .navbar {
 	border: 0px;
+	z-index: 10;
 }
 
 .navbar-default .navbar-nav > li > a:focus,
@@ -226,7 +245,7 @@ header > .navbar-default {
 }
 
 .navbar-default .navbar-toggle {
-	border-color: #d8417d;
+	border-color: transparent;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -240,7 +259,6 @@ header > .navbar-default {
 
 .navbar-brand {
 	font-family: 'Finger Paint', cursive;
-	font-size: 22px;
 }
 
 /*/NAVBAR*/
@@ -353,6 +371,7 @@ main .merch {
 .merch-body h3 a {
 	text-decoration: none;
 	color: white;
+	padding-right: 10px;
 }
 
 .merch-body h3 a:hover,
@@ -360,6 +379,7 @@ main .merch {
 	text-decoration: none;
 	color: #f2c0d4;
 }
+
 
 /*/MERCH*/
 
@@ -370,8 +390,7 @@ main .new-album {
 }
 
 .new-album img {
-	padding: 20px 0 30px;
-	margin: 0 auto;
+	margin: 20px auto 30px;
 }
 
 
@@ -409,10 +428,11 @@ footer li {
 
 footer img {
 	width: 40px;
+	transition: 300ms;
 }
 
 footer img:hover {
-	opacity: 0.7;
+	filter: blur(2px);
 }
 
 /*/FOOTER*/
@@ -443,6 +463,10 @@ footer img:hover {
 
 .merch-filter {
 	height: 100%;
+}
+
+.thumb a img {
+	height: 180px;
 }
 /*/MERCH SECION*/
 
@@ -488,7 +512,125 @@ footer img:hover {
 	padding: 0px;
 }
 
-.album-container .thumb {
-	margin-top: 30px;
-	margin-bottom: 0px;
+.album-container {
+	margin: 0 auto;
+}
+.album-thumb {
+	position: relative;
+	margin: 30px 0 0;
+}
+
+.album-art {
+	opacity: 1;
+	display: block;
+	height: auto;
+	transition: 500ms ease;
+	backface-visibility: hidden;
+}
+
+.album-popup {
+	transition: 500ms ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0;
+	background-color: #336699;
+	border: 1px solid #204060;
+	border-radius: 5px;
+	box-shadow: 0 0 25px black;
+	color: white;
+	padding: 0 20px 0;
+	text-align: center;
+}
+
+.album-thumb:hover .album-art {
+	opacity: 0.3;
+}
+
+.album-thumb:hover .album-popup {
+	opacity: 1;
+}
+
+.album-popup > h3 {
+	font-weight: bolder;
+}
+/*/DISCOGRAPHY*/
+
+/*ANIMATIONS*/
+.animated-album {
+	animation-name: neonglow;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes neonglow {
+	0% {
+		box-shadow: 0 0 0px purple;
+	}
+
+	100% {
+		box-shadow: 0 0 50px purple;
+	}
+}
+
+.animated-banner {
+	animation-name: bannercolorcycle;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes bannercolorcycle {
+	0% {
+		color: #d8417d;
+	}
+
+	25% {
+		color: #00cc00;
+	}
+
+	50% {
+		color: #1aa3ff;
+	}
+
+	75% {
+		color: #ff751a;
+	}
+
+	100% {
+		color: #ff33bb;
+	}
+}
+
+.fa-shopping-cart {
+	animation-name: shoppingcart;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes shoppingcart {
+	0% {
+		transform: translateX(-30px);
+		opacity: 0;
+	}
+
+	20% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
 }
