@@ -46,7 +46,8 @@ main {
 		border-radius: 0 0 5px 5px;
 	}
 
-	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form {
 		border: 0px;
 	}
 	
@@ -99,7 +100,8 @@ main {
 		border-radius: 0 0 5px 5px;
 	}
 
-	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form {
 		border: 0px;
 	}
 
@@ -352,6 +354,7 @@ header > .navbar-default {
   background-color: #9D2053;
   border-color: #3f0d21;
 }
+/*/LOG IN MODAL*/
 
 /*MERCH*/
 main .merch {
@@ -382,8 +385,6 @@ main .merch {
 	text-decoration: none;
 	color: #f2c0d4;
 }
-
-
 /*/MERCH*/
 
 /*NEW ALBUM*/
@@ -395,8 +396,6 @@ main .new-album {
 .new-album img {
 	margin: 20px auto 30px;
 }
-
-
 /*/NEW ALBUM*/
 
 /*FOOTER*/
@@ -405,7 +404,6 @@ footer {
 	min-height: 20vh;
 	text-align: center;
 	padding: 30px 0 30px;
-
 }
 
 footer .input-group {
@@ -420,13 +418,11 @@ footer .input-group span {
 footer ul {
 	list-style: none;
 	padding: 0px;
-
 }
 
 footer li {
 	display: inline-block;
 	padding: 0 10px 0;
-
 }
 
 footer img {
@@ -437,7 +433,6 @@ footer img {
 footer img:hover {
 	filter: blur(2px);
 }
-
 /*/FOOTER*/
 
 /*MERCHANDISE SECTION*/
@@ -452,7 +447,8 @@ footer img:hover {
 	width: 100%;
 }
 
-.merch-body .merch-filter, .merch-display {
+.merch-body .merch-filter,
+.merch-display {
 	padding: 20px;
 }
 
@@ -484,7 +480,14 @@ footer img:hover {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	padding: 0 20px 0;
+	margin: 0;
+	background-color: white;
+	border: 1px solid #204060;
+	border-radius: 5px;
+	box-shadow: 0 0 25px black;
+	color: black;
+	padding: 20px;
+	text-align: center;
 }
 
 .thumb:hover .merch-pic {
@@ -495,13 +498,10 @@ footer img:hover {
 	opacity: 1;
 }
 
-.thumb button {
-	box-shadow: 0 0 20px black;
+.merch-popup > h4, h5 {
+	font-weight: bolder;
+	margin: 5px 0 5px;
 }
-
-/*.merch-filter {
-	height: 100%;
-}*/
 /*/MERCH SECION*/
 
 /*TOUR SECTION*/
@@ -549,6 +549,7 @@ footer img:hover {
 .album-container {
 	margin: 0 auto;
 }
+
 .album-thumb {
 	position: relative;
 	margin: 30px 0 0;
