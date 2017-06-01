@@ -240,13 +240,62 @@ header > .navbar-default {
 	z-index: 10;
 }
 
-.navbar-default .navbar-nav > li > a:focus,
+/*.navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover {
 	color: #f2c0d4;
 	font-size: 2em;
 	transition: 0.5s ease;
+}*/
+
+.nav-link {
+	position: relative;
+}
+
+.nav-link:before {
+	font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+	color: #f6d5e2;
+    font-size: 2em;
+	position: absolute;
+	opacity: 0;
+	transition: 200ms ease-in-out;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.nav-link1:before {
+	content: "\f015";
+}
+
+.nav-link2:before {
+	content: "\f07a";
+}
+
+.nav-link3:before {
+	content: "\f073";
+}
+
+.nav-link4:before {
+	content: "\f001";
+}
+
+.nav-link5:before {
+	content: "\f007";
+}
+
+.nav-link:hover:before,
+.nav-link:focus:before,
+.nav-link:active:before {
+	opacity: 1;
+}
+
+.nav-link:hover span {
+	opacity: 0;
+	transition: 200ms ease-in-out;
 }
 
 .navbar-default .navbar-toggle {
