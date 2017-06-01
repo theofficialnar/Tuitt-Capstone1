@@ -304,7 +304,7 @@ header > .navbar-default {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #f6d5e2;
+  background-color: transparent;
 }
 
 .navbar-brand {
@@ -735,3 +735,4 @@ footer img:hover {
 	}
 }
 /*/ANIMATIONS*/
+
