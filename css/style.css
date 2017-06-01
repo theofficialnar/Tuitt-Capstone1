@@ -72,6 +72,14 @@ main {
   	.navbar-brand {
 	font-size: 14px;
 	}
+
+	.merch-filter {
+		width: 100%;
+	}
+
+	.merch .btn-lg {
+		margin-bottom: 30px;
+	}
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -120,6 +128,10 @@ main {
   	.navbar-brand {
 	font-size: 16px;
 	}
+
+	.merch-filter {
+	margin-left: 16.66666667%;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -142,6 +154,10 @@ main {
 
   	.navbar-brand {
 	font-size: 22px;
+	}
+
+	.merch-filter {
+	margin-left: 16.66666667%;
 	}
 }
 
@@ -484,6 +500,10 @@ footer img:hover {
 	float: right;
 }
 
+.merch-filter {
+	max-width: 550px;
+}
+
 .thumb {
 	margin-bottom: 30px;
 	position: relative;
@@ -499,6 +519,7 @@ footer img:hover {
 	display: block;
 	transition: all 500ms ease;
 	backface-visibility: hidden;
+	margin: 0 auto;
 }
 
 .merch-popup {
@@ -589,6 +610,7 @@ footer img:hover {
 	height: auto;
 	transition: 500ms ease;
 	backface-visibility: hidden;
+	margin: 0 auto;
 }
 
 .album-popup {
